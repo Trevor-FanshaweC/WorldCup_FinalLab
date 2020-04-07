@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Simple Anim Example</h1>
+            <h4>Box Animation with JavaScript - Event Listeners</h4>
+            <p>
+                Use JavaScript to control programming flow. When an animation ends, do something else! </br>You can use
+                JavaScript events and event handlers to create engaging UX and UI.
+            </p>
+        </header>
+
+        <h3 class="character-name"></h3>
+
+        <section class="scene">
+            <div class="cube">
+                <div class="cube__face cube__face--front">
+                    <img src="images/cap.jpeg" alt="cap">
+                </div>
+                <div class="cube__face cube__face--back">
+                    <img src="images/carol.jpeg" alt="captain marvel">
+                </div>
+                <div class="cube__face cube__face--right">
+                    <img src="images/clint.jpeg" alt="hawkeye">
+                </div>
+                <div class="cube__face cube__face--left">
+                    <img src="images/hulk.jpeg" alt="hulk">
+                </div>
+                <div class="cube__face cube__face--top">
+                    <img src="images/thor.jpeg" alt="thor">
+                </div>
+                <div class="cube__face cube__face--bottom">
+                    <img src="images/widow.jpeg" alt="black widow">
+                </div>
+            </div>
+        </section>
+        <nav id="character-nav">
+            <ul class="characters">
+                <li>
+                    <button class="btn-rounded" data-face="front">
+                        <img src="images/cap.jpeg" alt="captain america">
+                    </button>
+                </li>
+
+                <li>
+                    <button class="btn-rounded" data-face="back">
+                        <img src="images/carol.jpeg" alt="captain marvel">
+                    </button>
+                </li>
+
+                <li>
+                    <button class="btn-rounded" data-face="right">
+                        <img src="images/clint.jpeg" alt="hawkeye">
+                    </button>
+                </li>
+                <li>
+                    <button class="btn-rounded" data-face="left">
+                        <img src="images/hulk.jpeg" alt="hulk">
+                    </button>
+                </li>
+                <li>
+                    <button class="btn-rounded" data-face="top">
+                        <img src="images/thor.jpeg" alt="thor">
+                    </button>
+                </li>
+                <li>
+                    <button class="btn-rounded" data-face="bottom">
+                        <img src="images/widow.jpeg" alt="black widow">
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
