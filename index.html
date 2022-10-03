@@ -4,85 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Marvel Characters Team Page</title>
 
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+    <header>
+        <h1 class="hidden">All About the Team</h1>
+        <img id="main-logo" src="images/logo.svg" alt="avengers logo">
+    </header>
+
     <main>
-        <header>
-            <h1>Simple Anim Example</h1>
-            <h4>Box Animation with JavaScript - Event Listeners</h4>
-            <p>
-                Use JavaScript to control programming flow. When an animation ends, do something else! </br>You can use
-                JavaScript events and event handlers to create engaging UX and UI.
-            </p>
-        </header>
-
-        <h3 class="character-name"></h3>
-
-        <section class="scene">
-            <div class="cube">
-                <div class="cube__face cube__face--front">
-                    <img src="images/cap.jpeg" alt="cap">
-                </div>
-                <div class="cube__face cube__face--back">
-                    <img src="images/carol.jpeg" alt="captain marvel">
-                </div>
-                <div class="cube__face cube__face--right">
-                    <img src="images/clint.jpeg" alt="hawkeye">
-                </div>
-                <div class="cube__face cube__face--left">
-                    <img src="images/hulk.jpeg" alt="hulk">
-                </div>
-                <div class="cube__face cube__face--top">
-                    <img src="images/thor.jpeg" alt="thor">
-                </div>
-                <div class="cube__face cube__face--bottom">
-                    <img src="images/widow.jpeg" alt="black widow">
-                </div>
-            </div>
-        </section>
         <nav id="character-nav">
             <ul class="characters">
                 <li>
-                    <button class="btn-rounded" data-face="front">
-                        <img src="images/cap.jpeg" alt="captain america">
-                    </button>
+                    <img src="images/cap.jpeg" alt="captain america">                    
+                </li>
+
+                <li>                    
+                   <img src="images/carol.jpeg" alt="captain marvel">
                 </li>
 
                 <li>
-                    <button class="btn-rounded" data-face="back">
-                        <img src="images/carol.jpeg" alt="captain marvel">
-                    </button>
+                    <img src="images/clint.jpeg" alt="hawkeye">
                 </li>
-
-                <li>
-                    <button class="btn-rounded" data-face="right">
-                        <img src="images/clint.jpeg" alt="hawkeye">
-                    </button>
+                <li>                    
+                    <img src="images/hulk.jpeg" alt="hulk">
                 </li>
                 <li>
-                    <button class="btn-rounded" data-face="left">
-                        <img src="images/hulk.jpeg" alt="hulk">
-                    </button>
+                    <img src="images/thor.jpeg" alt="thor">
                 </li>
                 <li>
-                    <button class="btn-rounded" data-face="top">
-                        <img src="images/thor.jpeg" alt="thor">
-                    </button>
-                </li>
-                <li>
-                    <button class="btn-rounded" data-face="bottom">
-                        <img src="images/widow.jpeg" alt="black widow">
-                    </button>
+                    <img src="images/widow.jpeg" alt="black widow">
                 </li>
             </ul>
         </nav>
-    </main>
 
-    <script src="js/main.js"></script>
+        <article>
+            <h3>Choose Your Hero!</h3>
+            <p>Use your mouse to hover / click to discover more about each Marvel character</p>
+        </article>
+
+        <section class="lightbox"></section>
+    </main>
+    <!-- make this a sticky footer so it's always at the bottom-->
+    <footer class="sticky_footer">
+        <h3>All Images &copy; Marvel</h3>
+    </footer>
 </body>
 
 </html>
