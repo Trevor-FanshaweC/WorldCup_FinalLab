@@ -14,7 +14,6 @@ body {
   background-color: black;
   color: white;
   background-image: url('../images/denim.png');
-  background-blend-mode: exclusion;
 }
 
 header { 
@@ -26,7 +25,7 @@ header {
 
 #main-logo { width: 300px; padding: 10px 0; }
 
-#character-nav { text-align: center; background-color: black;}
+#character-nav { text-align: center; background-color: black; }
 
 .characters { list-style-type: none; }
 
