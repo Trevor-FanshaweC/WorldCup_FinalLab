@@ -25,18 +25,69 @@ header {
 
 #main-logo { width: 300px; padding: 10px 0; }
 
-#character-nav { text-align: center; background-color: black; }
+#character-nav { 
+  text-align: center; 
+  background-color: #343030; 
+  background-image: url('../images/characters_art_mas_mob_01.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
 
 .characters { list-style-type: none; }
 
 .characters li { 
   display: inline-block;
+  position: relative;
+  cursor: pointer;
+  height: 220px;
+  margin: 10px 8px;
+
+  background-color: black;
+  text-align: left;
+  overflow: hidden;
+
+  /* border: thin dashed white; */
 }
 
-.characters li img {
+.characters li h5 {
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  padding: 14px 8px; 
+  position: relative; 
+  z-index: 50; 
+}
+
+.sprite { 
+  width: 150px;
+  height: 150px;
+
+  background-image: url('../images/marvelSprites.jpg');
+}
+
+.characters li:hover .sprite { background-position-y: -150px !important; }
+
+.characters li:hover .red-bumper { height: 70px; }
+
+.red-bumper { 
+  height: 6px;
+  width: 100%; 
+  background-color: red;
+  position: absolute;
+  top: 150px;
+
+  transition: height 0.2s ease;
+}
+
+/* .characters li img {
   width: 150px;
   cursor: pointer;
-}
+} */
+
+#carol { background-position: -150px 0; }
+#clint { background-position: -300px 0;}
+#hulk { background-position: -450px 0;}
+#thor { background-position: -600px 0;}
+#widow { background-position: -750px 0;}
 
 article {
   padding: 20px;
