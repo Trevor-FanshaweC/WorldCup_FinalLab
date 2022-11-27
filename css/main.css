@@ -122,7 +122,8 @@ footer {
 }
 
 /* lightbox rules here */
-.lightbox { 
+.lightbox {
+  display: none;
   width: 100vw;
   height: 100vh;
 
